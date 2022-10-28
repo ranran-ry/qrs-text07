@@ -1,0 +1,27 @@
+--cpu Cortex-M3
+"ckds\startup_stm32f103xb.o"
+"ckds\main.o"
+"ckds\gpio.o"
+"ckds\tim.o"
+"ckds\usart.o"
+"ckds\stm32f1xx_it.o"
+"ckds\stm32f1xx_hal_msp.o"
+"ckds\stm32f1xx_hal_gpio_ex.o"
+"ckds\stm32f1xx_hal_tim.o"
+"ckds\stm32f1xx_hal_tim_ex.o"
+"ckds\stm32f1xx_hal.o"
+"ckds\stm32f1xx_hal_rcc.o"
+"ckds\stm32f1xx_hal_rcc_ex.o"
+"ckds\stm32f1xx_hal_gpio.o"
+"ckds\stm32f1xx_hal_dma.o"
+"ckds\stm32f1xx_hal_cortex.o"
+"ckds\stm32f1xx_hal_pwr.o"
+"ckds\stm32f1xx_hal_flash.o"
+"ckds\stm32f1xx_hal_flash_ex.o"
+"ckds\stm32f1xx_hal_exti.o"
+"ckds\stm32f1xx_hal_uart.o"
+"ckds\system_stm32f1xx.o"
+--strict --scatter "CKDS\CKDS.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "CKDS.map" -o CKDS\CKDS.axf
